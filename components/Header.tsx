@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { navItems } from "@/data/site";
 import { Icon } from "./Icons";
+import { LogoImage } from "./Logo";
 
 export function Header() {
   const [open, setOpen] = useState(false);
@@ -34,8 +35,8 @@ export function Header() {
             onClick={close}
             aria-label="Любимчик — на главную"
           >
-            <span className="grid h-11 w-11 place-items-center rounded-2xl bg-[#2f4b34] text-[#fffaf0] shadow-[0_14px_26px_rgba(47,75,52,0.22)] transition-transform duration-300 group-hover:-rotate-6 group-hover:scale-105">
-              <Icon name="paw" className="h-6 w-6" />
+            <span className="grid h-12 w-12 place-items-center overflow-hidden rounded-2xl bg-white p-1 shadow-[0_14px_26px_rgba(47,75,52,0.18)] ring-1 ring-[#eadcc2]/80 transition-transform duration-300 group-hover:-rotate-3 group-hover:scale-105">
+              <LogoImage className="h-full w-full object-contain" />
             </span>
             <span>
               <span className="block text-lg font-black tracking-[-0.04em] text-[#2f4b34]">

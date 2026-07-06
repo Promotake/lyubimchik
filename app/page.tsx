@@ -1,6 +1,7 @@
 import { Header } from "@/components/Header";
 import { ContactForm } from "@/components/ContactForm";
 import { Icon } from "@/components/Icons";
+import { LogoImage } from "@/components/Logo";
 import { ProductShowcase } from "@/components/ProductShowcase";
 import { SectionHeading } from "@/components/SectionHeading";
 import { benefits, categories, contactCards, reviews } from "@/data/site";
@@ -89,9 +90,13 @@ export default function Home() {
                         Стартовый уют
                       </h2>
                     </div>
-                    <div className="grid h-16 w-16 place-items-center rounded-[1.4rem] bg-[#2f4b34] text-[#fffaf0] shadow-[0_18px_36px_rgba(47,75,52,0.26)]">
-                      <Icon name="paw" className="h-9 w-9" />
+                    <div className="grid h-20 w-20 place-items-center overflow-hidden rounded-[1.4rem] bg-white p-1.5 shadow-[0_18px_36px_rgba(47,75,52,0.16)] ring-1 ring-[#eadcc2]/80">
+                      <LogoImage className="h-full w-full object-contain" />
                     </div>
+                  </div>
+
+                  <div className="mt-6 rounded-[1.6rem] border border-[#eadcc2]/70 bg-white/62 p-4">
+                    <LogoImage className="mx-auto h-28 w-full object-contain sm:h-36" />
                   </div>
 
                   <div className="mt-7 grid gap-3 sm:grid-cols-2">
@@ -301,8 +306,8 @@ export default function Home() {
       <footer className="border-t border-[#eadcc2]/80 bg-[#2f4b34] py-10 text-white">
         <div className="section-shell flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
           <div className="flex items-center gap-3">
-            <span className="grid h-11 w-11 place-items-center rounded-2xl bg-white/12 text-[#fff7df]">
-              <Icon name="paw" className="h-6 w-6" />
+            <span className="grid h-12 w-12 place-items-center overflow-hidden rounded-2xl bg-white p-1">
+              <LogoImage className="h-full w-full object-contain" />
             </span>
             <div>
               <p className="text-lg font-black tracking-[-0.04em]">Любимчик</p>
