@@ -35,8 +35,8 @@ export function Header() {
             onClick={close}
             aria-label="Любимчик — на главную"
           >
-            <span className="grid h-12 w-12 place-items-center overflow-hidden rounded-2xl bg-white p-1 shadow-[0_14px_26px_rgba(47,75,52,0.18)] ring-1 ring-[#eadcc2]/80 transition-transform duration-300 group-hover:-rotate-3 group-hover:scale-105">
-              <LogoImage className="h-full w-full object-contain" />
+            <span className="grid h-16 w-16 shrink-0 place-items-center overflow-visible transition-transform duration-300 group-hover:-rotate-3 group-hover:scale-105">
+              <LogoImage className="h-full w-full object-contain drop-shadow-[0_10px_18px_rgba(47,75,52,0.18)]" />
             </span>
             <span>
               <span className="block text-lg font-black tracking-[-0.04em] text-[#2f4b34]">
