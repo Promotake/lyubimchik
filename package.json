@@ -1,0 +1,25 @@
+{
+  "name": "lyubimchik",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Адаптивный сайт зоомагазина «Любимчик» на Next.js, TypeScript и Tailwind CSS с деплоем на GitHub Pages.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "typecheck": "tsc --noEmit",
+    "preview": "npx serve@latest out"
+  },
+  "dependencies": {
+    "next": "^16.2.10",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "4.1.10",
+    "@types/node": "22.15.30",
+    "@types/react": "19.0.12",
+    "@types/react-dom": "19.0.4",
+    "tailwindcss": "4.1.10",
+    "typescript": "5.8.3"
+  }
+}
